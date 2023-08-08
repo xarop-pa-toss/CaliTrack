@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CaliTrack.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CaliTrack.Data 
 {
@@ -8,5 +9,8 @@ namespace CaliTrack.Data
         {
                 
         }
+
+        public DbSet<ExerciseCategory> ExerciseCategories { get; set; }
+
     }
 }
